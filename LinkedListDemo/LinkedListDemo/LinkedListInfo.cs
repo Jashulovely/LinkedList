@@ -44,5 +44,19 @@ namespace LinkedListDemo
                 temp = temp.next;
             }
         }
+        public void Reverse(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                head.next = temp;
+            }
+        }
     }
 }

@@ -10,10 +10,15 @@ namespace LinkedListDemo
     {
         static void Main(string[] args)
         {
+
             LinkedListInfo linkedListInfo = new LinkedListInfo();
-            linkedListInfo.Add(56);
-            linkedListInfo.Add(30);
-            linkedListInfo.Add(70);
+            //linkedListInfo.Add(56);
+            //linkedListInfo.Add(30);
+            //linkedListInfo.Add(70);
+            //linkedListInfo.Display();
+            linkedListInfo.Reverse(56);
+            linkedListInfo.Reverse(30);
+            linkedListInfo.Reverse(70);
             linkedListInfo.Display();
             Console.ReadLine();
         }
