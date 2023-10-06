@@ -31,5 +31,18 @@ namespace LinkedListDemo
             }
             Console.WriteLine(node.data);
         }
+        public void Display()
+        {
+            Node temp = head;
+            if(temp == null)
+            {
+                Console.WriteLine("Linked list is empty.");
+            }
+            while(temp != null)
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
+        }
     }
 }
